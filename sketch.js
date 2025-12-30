@@ -169,15 +169,8 @@ let leftBtn, rightBtn, jumpBtn;
 let isLeftBtnDown = false, isRightBtnDown = false;
 
 function preload() {
-  spriteSheet = loadImage('1/walk.png');
-  jumpSheet = loadImage('1/jump.png');
-  function preload() {
-  // 把原本的 'jump/jump.png' 改成 'jump.png'
-  jumpImg = loadImage('jump.png'); 
-  
-  // 同理，如果 walk.png 也在同一個地方，也請改掉
-  walkImg = loadImage('walk.png'); 
-}
+  spriteSheet = loadImage('walk.png');
+  jumpSheet = loadImage('jump.png');
   spriteSheet2 = loadImage('2/all_2.png');
   spriteSheet3 = loadImage('3/all_3.png');
   spriteSheet4 = loadImage('4/all_4.png');
