@@ -169,21 +169,25 @@ let leftBtn, rightBtn, jumpBtn;
 let isLeftBtnDown = false, isRightBtnDown = false;
 
 function preload() {
-  // 直接使用你確認可以開啟的完整網址進行測試
-  spriteSheet = loadImage('https://jing412572.github.io/20251230_/1/walk.png');
-  jumpSheet = loadImage('https://jing412572.github.io/20251230_/1/jump.png');
-  
-  // 背景圖與其他角色
-  spriteSheet2 = loadImage('https://jing412572.github.io/20251230_/1/2/all_2.png');
-  spriteSheet3 = loadImage('https://jing412572.github.io/20251230_/3/all_3.png');
-  spriteSheet4 = loadImage('https://jing412572.github.io/20251230_/4/all_4.png');
-  spriteSheet5 = loadImage('https://jing412572.github.io/20251230_/5/all_5.png');
-  bgImg = loadImage('https://jing412572.github.io/20251230_/1/origbig.png');
+  // 1 資料夾下的檔案
+  spriteSheet = loadImage('1/walk.png');
+  jumpSheet = loadImage('1/jump.png');
+  bgImg = loadImage('1/origbig.png');
+  questionBank = loadTable('1/questions.csv', 'csv', 'header');
 
-  // 題庫 CSV
-  questionBank = loadTable('https://jing412572.github.io/20251230_/1/questions.csv', 'csv', 'header');
-  questionBank3 = loadTable('https://jing412572.github.io/20251230_/1/questions_3.csv', 'csv', 'header'); 
-  questionBank4 = loadTable('https://jing412572.github.io/20251230_/1/questions_4.csv', 'csv', 'header'); 
+  // 2 資料夾下的檔案
+  spriteSheet2 = loadImage('2/all_2.png');
+
+  // 3 資料夾下的檔案
+  spriteSheet3 = loadImage('3/all_3.png');
+  questionBank3 = loadTable('3/questions_3.csv', 'csv', 'header'); 
+
+  // 4 資料夾下的檔案
+  spriteSheet4 = loadImage('4/all_4.png');
+  questionBank4 = loadTable('4/questions_4.csv', 'csv', 'header'); 
+
+  // 5 資料夾下的檔案
+  spriteSheet5 = loadImage('5/all_5.png');
 }
 
 function setup() {
