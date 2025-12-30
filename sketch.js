@@ -169,16 +169,23 @@ let leftBtn, rightBtn, jumpBtn;
 let isLeftBtnDown = false, isRightBtnDown = false;
 
 function preload() {
-  spriteSheet = loadImage('walk.png');
-  jumpSheet = loadImage('jump.png');
-  spriteSheet2 = loadImage('2/all_2.png');
-  spriteSheet3 = loadImage('3/all_3.png');
-  spriteSheet4 = loadImage('4/all_4.png');
-  spriteSheet5 = loadImage('5/all_5.png');
-  bgImg = loadImage('origbig.png');
-  questionBank = loadTable('questions.csv', 'csv', 'header');
-  questionBank3 = loadTable('questions_3.csv', 'csv', 'header'); // 載入角色3的題庫
-  questionBank4 = loadTable('questions_4.csv', 'csv', 'header'); // 載入角色4的題庫
+  // 因為 index.html 在外面，所以必須加上 '1/' 前綴來指引瀏覽器進入資料夾找圖
+  spriteSheet = loadImage('1/walk.png');
+  jumpSheet = loadImage('1/jump.png');
+  
+  // 這些原本就已經有路徑的也要檢查是否正確（假設 2, 3, 4 資料夾也在 1 資料夾內）
+  // 如果 2, 3, 4 資料夾是跟 1 資料夾並列在外面，則維持原樣
+  spriteSheet2 = loadImage('1/2/all_2.png');
+  spriteSheet3 = loadImage('1/3/all_3.png');
+  spriteSheet4 = loadImage('1/4/all_4.png');
+  spriteSheet5 = loadImage('1/5/all_5.png');
+  
+  bgImg = loadImage('1/origbig.png');
+  
+  // 題庫 CSV 檔案如果也在 1 資料夾內，也要改
+  questionBank = loadTable('1/questions.csv', 'csv', 'header');
+  questionBank3 = loadTable('1/questions_3.csv', 'csv', 'header'); 
+  questionBank4 = loadTable('1/questions_4.csv', 'csv', 'header'); 
 }
 
 function setup() {
