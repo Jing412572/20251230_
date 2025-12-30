@@ -175,9 +175,9 @@ function preload() {
   
   // 背景圖與其他角色
   spriteSheet2 = loadImage('https://jing412572.github.io/20251230_/1/2/all_2.png');
-  spriteSheet3 = loadImage('https://jing412572.github.io/20251230_/1/3/all_3.png');
-  spriteSheet4 = loadImage('https://jing412572.github.io/20251230_/1/4/all_4.png');
-  spriteSheet5 = loadImage('https://jing412572.github.io/20251230_/1/5/all_5.png');
+  spriteSheet3 = loadImage('https://jing412572.github.io/20251230_/3/all_3.png');
+  spriteSheet4 = loadImage('https://jing412572.github.io/20251230_/4/all_4.png');
+  spriteSheet5 = loadImage('https://jing412572.github.io/20251230_/5/all_5.png');
   bgImg = loadImage('https://jing412572.github.io/20251230_/1/origbig.png');
 
   // 題庫 CSV
